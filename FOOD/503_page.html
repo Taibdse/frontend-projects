@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<style>
+		*,
+		html {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		#frame {
+			width: 100%;
+			height: 800px;
+			background-image: url('FOOD img/bg-image-4.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#frame>div {
+			width: 50%;
+			height: 100%;
+			margin: auto;
+			text-align: center;
+			padding-top: 40px;
+			color: white;
+		}
+
+		#frame>div h2 {
+			margin-top: 30px;
+			font-size: 2.5em;
+		}
+
+		#frame>div #horizon {
+			width: 40px;
+			height: 2px;
+			background-color: #FCCB56;
+			margin: 30px auto;
+		}
+
+		#frame>div #number {
+			font-size: 10em;
+			letter-spacing: 10px;
+		}
+
+		#frame>div p {
+			font-weight: bold;
+			margin-top: 30px;
+			line-height: 30px;
+		}
+
+		#frame > div #back_home{
+			display: inline-block;
+			color: black;
+			font-weight: bold;
+			font-size: 1em;
+			padding: 20px 40px;
+			background-color: #FCCB56;
+			border-radius: 30px;
+			margin-top: 50px;
+			transition: all 0.3s;
+		}
+		#frame > div #back_home span{
+			margin-right: 10px;
+		}
+		#frame > div #back_home:hover{
+			background-color: #A49900;
+		}
+		#frame > div #contact{
+			background-color: transparent;
+			padding: 20px 30px;
+			border: 1px solid #ffffff;
+			border-radius: 30px;
+			margin-left: 20px;
+			transition: all 0.3s;
+		}
+		#frame > div #contact:hover{
+			background-color: #A49900;
+			border: 1px solid transparent;
+		}
+		#frame > div #contact span{
+			margin-right: 10px;
+			font-size: 1.4em;
+		}
+		#privacy{
+			margin-top: 50px;
+		}
+		#privacy a{
+			text-decoration: underline;
+		}
+		#privacy a:hover{
+			color: #FCCB56;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="frame">
+		<div>
+			<a href="home.html"><img src="FOOD img/brand-light-186x65.png"></a>
+			<h2>Service is temporary unavailable</h2>
+			<div id="horizon"></div>
+			<div id="number">503</div>
+			<p>Sorry, we're offline right now to make our site even better. Please, come back later and check what we've been up to.</p>
+			<a href="home.html" id="back_home"><span><i class="fa fa-arrow-left" aria-hidden="true"></i>
+</span>BACK TO HOME PAGE</a>
+			<a href="contact.html" id="contact"><span><i class="fa fa-envelope-o" aria-hidden="true"></i>
+</span>CONTACT US</a>
+			<div id="privacy">VeganFood © 2017 <a href="">Privacy Policy</a></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1250px) {
+	header > div {
+		width: 100%;
+	}
+	#Thue_dich_vu > div {
+		width: 90%;
+	}
+	#dichvu_maychu_cloud > #wrapper {
+		width: 90%;
+	}
+	#thue_cho_dat_may > div:nth-of-type(2) {
+		width: 90%;
+	}
+	#visao_chon_vittel > div:nth-of-type(2) {
+		width: 90%;
+	}
+	#khac_biet > div:nth-of-type(2) {
+		width: 90%;
+	}
+	#dich_vu_tot > div:nth-of-type(2) {
+		width: 95%;
+	}
+	#khach_hang_tieu_bieu > div:nth-of-type(2) {
+		width: 90%;
+	}
+	footer #part_1_footer {
+		width: 98%;
+	}
+	nav > div {
+		width: 100%;
+		margin: auto;
+	}
+	nav > div > a img {
+		left: 10px;
+	}
+	nav > div > ul {
+		width: 90%;
+		left: 180px;
+	}
+	nav > div > ul > li > a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	nav > div > div {
+		display: none;
+	}
+	.sub_menu {
+		left: 300px;
+		width: 900px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	h2 {
+		font-size: 1em;
+	}
+	header > div {
+		height: auto;
+	}
+	#Thue_dich_vu > div {
+		text-align: center;
+	}
+	#Thue_dich_vu > div a {
+		position: static;
+		margin-top: 20px;
+	}
+	#Thue_dich_vu > div > h2 {
+		font-size: 1.2em;
+	}
+	#Thue_dich_vu > div h3 {
+		font-size: 1em;
+	}
+	header > div > div {
+		width: 70%;
+		float: none;
+		margin: 30px auto;
+	}
+	#dichvu_maychu_cloud > #wrapper > div {
+		width: 70%;
+		float: none;
+		margin: 30px auto;
+	}
+	#thue_cho_dat_may > div:nth-of-type(2) > div {
+		width: 50%;
+		float: left;
+		margin-top: 30px;
+	}
+	#visao_chon_vittel > div:nth-of-type(2) .box {
+		width: 50%;
+		float: left;
+		margin-top: 30px;
+	}
+	#dich_vu_tot > div > div {
+		float: none;
+		width: 70%;
+		margin: 30px auto;
+	}
+	#khach_hang_tieu_bieu > div:nth-of-type(2) ul li {
+		width: 50%;
+	}
+	footer #part_1_footer > ul > li {
+		width: 45%;
+		float: left;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+	footer #part_2_footer > div {
+		text-align: center;
+	}
+	footer #part_2_footer > div > span {
+		display: inline-block;
+		float: none;
+	}
+	footer #part_2_footer > div > div {
+		float: none;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+
+	nav > div > ul {
+		display: none;
+	}
+	nav > div > #bar {
+		display: block;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	header > div > div {
+		width: 80%;
+	}
+	#dichvu_maychu_cloud > #wrapper > div {
+		width: 80%;
+	}
+	#thue_cho_dat_may > div:nth-of-type(2) > div {
+		width: 80%;
+		float: none;
+		margin: 30px auto;
+	}
+	#visao_chon_vittel > div:nth-of-type(2) .box {
+		width: 80%;
+		float: none;
+		margin: 30px auto;
+	}
+	#dich_vu_tot > div > div {
+		width: 80%;
+	}
+	footer {
+		padding-bottom: 150px;
+	}
+	footer #part_1_footer > ul > li {
+		width: 80%;
+		float: none;
+		margin: 30px auto;
+	}
+	footer #part_2_footer {
+		width: 90%;
+		margin: auto;
+	}
+
+}

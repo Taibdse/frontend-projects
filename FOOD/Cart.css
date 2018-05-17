@@ -1,0 +1,166 @@
+
+
+#main{
+	width: 100%;
+	height: 800px;
+	
+}
+
+#img{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding-top: 50px;
+	padding-left: 100px;
+	
+}
+
+#img img{
+	width: 542px;
+	height: 530px;
+}
+
+#text{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 50px;
+	padding-top: 100px;
+	
+}
+
+#text ul{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+#text ul li{
+	width: 200px;
+	height: 100px;
+	border: none;
+	font-size: 30px;
+	background-color: #FFFFFF;
+	display: inline;
+	margin: 10px;
+	padding-left: 10px;
+	color: #e5e7e9;
+	
+	
+}
+#text ul span{
+	font-size: 25px;
+}
+
+#text ul li span:first-child{
+	width: 100%;
+	height: 100%;
+	font-family: Lato;
+	font-size: 50px;
+}
+
+#text ul li span:last-child{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #e5e7e9;;
+	color: #626262;
+	display: inline-block;
+	text-align: center;
+	padding-top: 25px;
+	transition: all 0.5s;
+}
+
+#text hr{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+#text ul li:hover span:last-child{
+	color: white;
+	background-color: #a59a00;
+	transition: all 0.5s;
+	
+}
+
+#text ul li:hover{
+	color: #a59a00;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+#text div{
+	width: 100%;
+	height: auto;
+	margin-left: 10px;
+	margin-bottom: 50px;
+}
+
+#text div h4{
+	font-size: 25px;
+	color: #ABABAB;
+	margin-bottom: 20px;
+	
+}
+
+#text div > div{
+	width: 100%;
+	height: 25px;
+	border: 1px solid #ABABAB;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#text div > div span:last-child{
+	display: inline-block;
+	text-align: center;
+	float: right;
+	margin-right: 20px;
+	font-size: 20px;
+	
+}
+#text div > div span:first-child{
+	text-align: center;
+	float: left;
+	background-color: #a59a00;
+/*	Cần đặt width phù hợp theo chỉ số*/
+	
+	width: 50%; 
+	height: 100%;
+	border-radius: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+#text div input{
+	width: 150px;
+	height: 50px;
+	font-size: 30px;
+	border-radius: 40px;
+	text-align: center;
+	border: 2px solid #ABABAB;
+	color: #626262;
+	
+}
+
+#text div button{
+	width: 250px;
+	height: 50px;
+	background-color: #A59A00;
+	color: white;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 30px;
+	font-family:Lato;
+	margin-left: 50px
+	
+}
+
+#text div button:hover{
+	background-color: #e5e7e9;
+	transition: all 0.5s;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vnexpress.net</title>
+    <meta charset="utf-8">
+    <<link rel="stylesheet" href="./vnexpress.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <p>Báo tiếng Việt nhiều người xem nhất</p>
+    </header>
+    <nav>
+        <div>
+            <ul>
+                <a href="/">
+                    <li>Thời sự</li>
+                </a>
+                <a href="/">
+                    <li>Thế giới</li>
+                </a>
+                <a href="/">
+                    <li>Kinh doanh </li>
+                </a>
+                <a href="/">
+                    <li>Giải trí </li>
+                </a>
+                <a href="/">
+                    <li>Thể thao</li>
+                </a>
+                <a href="/">
+                    <li>Pháp luật</li>
+                </a>
+                <a href="/">
+                    <li>Sức khỏe</li>
+                </a>
+                <a href="/">
+                    <li>Giáo dục</li>
+                </a>
+                <a href="/">
+                    <li>Gia đình</li>
+                </a>
+                <a href="/">
+                    <li>Du lịch</li>
+                </a>
+                <a href="/">
+                    <li>Khoa học</li>
+                </a>
+                <a href="/">
+                    <li>Số hóa</li>
+                </a>
+                <a href="/">
+                    <li>Xe</li>
+                </a>
+                <a href="/">
+                    <li>cộng đòng</li>
+                </a>
+                <a href="/">
+                    <li>Tâm sự</li>
+                </a>
+                <a href="/">
+                    <li>Video</li>
+                </a>
+                <a href="/">
+                    <li>Cười</li>
+                </a>
+                <a href="/">
+                    <li>Rao vặt</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <span><img src="">Trang nhất</span>
+            <span><img src="">Vnexpress</span>
+            <span>Thứ sáu, 17/3/2017 | 20:32 GMT+7</span>
+            <span>24h qua</span>
+            <span>RSS</span>
+        </div>
+    </nav>
+
+    <body>
+        <section>
+            <div id="main_content">
+            <img src=""
+            
+            </div>
+            <div id="middle_list_content"></div>
+            <div id="Ads1"></div>
+        </section>
+
+    </body>
+</body>
+
+</html>

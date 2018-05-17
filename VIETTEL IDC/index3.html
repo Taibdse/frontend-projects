@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="JQUERY/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+	<select>
+		<option>1</option>
+		<option value="10" selected>2</option>
+		<option value="2">3</option>
+		<option value="3">4</option>
+	</select>
+	<button id="button">click me</button>
+	<p id="content"></p>
+	<script>
+		var content = document.getElementById("content");
+		var button = document.getElementById("button");
+
+		button.addEventListener('click', function() {
+			var str = "asdasd 230,000 ksdsfhs"
+			var select = document.querySelector('select');
+			
+			
+			
+			var arr = [1,2,3,4];
+			for(var i in arr){// i is a index of array
+				console.log(arr[i]);
+			}
+			
+			content.innerHTML = select.value;
+		})
+	</script>
+</body>
+</html>

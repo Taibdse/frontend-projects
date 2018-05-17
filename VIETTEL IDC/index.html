@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.hide {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			margin: 100px;
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="hide"></div>
+	<div class="hide"></div>
+	<div class="hide"></div>
+	<div class="hide"></div>
+	<script>
+		var hide_element = document.getElementsByClassName("hide");
+		window.onload = function(){
+			alert(hide_element[2]);
+		}
+	</script>
+</body>
+</html>

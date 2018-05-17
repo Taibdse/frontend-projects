@@ -1,0 +1,145 @@
+*,
+html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.middle_content{
+	max-width: 1092.8px;
+}
+body {
+	font-family: sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+#cong_ty_viettel_idc {
+	width: 100%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#cong_ty_viettel_idc > .middle_content {
+	width: 80%;
+	margin: 30px auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+#cong_ty_viettel_idc > .middle_content:after{
+	clear: both;
+	content: ' ';
+	display: block;
+}
+#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box {
+	width: 25%;
+	float: left;
+}
+
+#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box {
+	text-align: left;
+	font-size: 0.8em;
+	padding-right: 20px;
+	line-height: 20px;
+}
+
+#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box > h4 {
+	font-weight: bold;
+}
+
+#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box > span{
+	display: block;
+}
+
+#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box:nth-of-type(4) > span > span{
+	font-weight: bold;
+}
+
+#form_map{
+	width: 100%;
+	padding-top: 50px;
+	
+}
+#form_map > div{
+	width: 80%;
+	margin: 20px auto;
+	font-size: 0.8em;
+}
+#form_map > div > div{
+	float: left;
+	width: 50%;
+}
+#form_map > div > div >  h4{
+	text-align: center;
+}
+#form_map > div > div .input_form{
+	margin-top: 20px;
+}
+#form_map > div > div .input_form label{
+	display: block;
+	
+}
+#form_map > div > div .input_form input{
+	width: 95%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #F7F7F8;
+	outline: none;
+	border: none;
+}
+#form_map > div > div .input_form textarea{
+	width: 95%;
+	height: 212px;
+	background-color: #F7F7F8;
+	padding: 10px;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+}
+#form_map > div > div .ma-bao_ve label{
+	display: inline-block;
+}
+#form_map > div > div .ma-bao_ve label span:nth-of-type(1){
+	font-weight: bold;
+}
+#form_map > div > div > button{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 150px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 30px;
+	background-color: #333333;
+	transition: all 0.3s;
+	outline: none;
+	border: none;
+}
+#form_map > div > div > button:hover{
+	background-color: #1ABC9C;
+}
+#google_map > iframe{
+	width: 100%;
+	margin: auto;
+}
+@media only screen and (max-width: 1000px){
+	#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box{
+		width: 50%;
+		margin-bottom: 50px;
+	}
+	#form_map > div > div{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#form_map > div > div .input_form input, #form_map > div > div .input_form textarea{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	#cong_ty_viettel_idc > .middle_content > .cong_ty_vittelidc_box{
+		width: 100%;
+	}
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+</head>
+<style>
+	*,
+	html {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	form {
+		width: 70%;
+		height: auto;
+		margin: auto;
+		padding: 40px 20px;
+		background-color: #20897B;
+		margin-top: 100px;
+	}
+
+	form h2 {
+		color: white;
+	}
+
+	form .nhap {
+		width: 40%;
+		display: inline-block;
+		margin-top: 30px;
+		color: white;
+		font-size: 1.1em;
+	}
+
+	form .nhap:nth-of-type(2) {
+		margin-left: 30px;
+	}
+
+	form .nhap #name {
+		width: 100%;
+		padding: 20px 20px;
+		background-color: white;
+		outline: none;
+	}
+
+	form .nhap a {
+		color: white;
+	}
+
+	form .nhap #pass {
+		width: 100%;
+		padding: 20px 20px;
+		background-color: white;
+		outline: none;
+
+	}
+
+	#login {
+		display: block;
+		float: right;
+		padding: 25px 30px;
+		font-weight: bold;
+		margin-top: 50px;
+		cursor: pointer;
+	}
+
+	#google {
+		background-color: #C23321;
+		color: white;
+		width: 40%;
+		height: 50px;
+		line-height: 40px;
+		font-weight: bold;
+		font-size: 1.1em;
+		margin-top: 30px;
+		cursor: pointer;
+		text-align: left;
+		opacity: 0.9;
+	}
+
+	#google:hover {
+		opacity: 1;
+	}
+
+	.invalid {
+		color: red;
+		margin-left: 150px;
+		display: none;
+	}
+
+	#g {
+		display: inline-block;
+		height: 100%;
+		width: 15%;
+		background-color: #A52B1C;
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		font-size: 30px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		float: left;
+		margin-right: 10px;
+	}
+</style>
+
+
+<body>
+
+	<form>
+		<h2>Login into your account</h2>
+		<div class="nhap">
+			Username:<span class="invalid" id="name_invalid">Invalid info</span><br><br>
+			<input type="text" id="name"><br><br>
+			<a href="">Forgotten your username or password?</a>
+		</div>
+		<div class="nhap">
+			Password:<span class="invalid" id="pass_invalid">Invalid info</span><br><br>
+			<input type="password" id="pass"><br><br>
+			<input type="checkbox">Remember username
+		</div>
+		<button type="button" id="login" onclick="return check()">Log in</button>
+		<button type="button" id="google" onclick="open_google()"><span id="g">G+</span>Log in with mail@fpt.edu.vn</button>
+	</form>
+
+	<script type="text/javascript">
+		var name_input = document.getElementById("name");
+		var pass_input = document.getElementById("pass");
+		var name_invalid = document.getElementById("name_invalid");
+		var pass_invalid = document.getElementById("pass_invalid");
+
+		function open_google() {
+			window.open("https://www.google.com");
+		}
+
+		function check() {
+			var flag = true;
+			var name_reg = /^[a-zA-Z0-9]+$/;
+			var pass_reg = /^(.+){6,}$/;
+			if (name_invalid.style.display != "none") name_invalid.style.display = "none";
+			if (name_reg.test(name_input.value) == false) {
+
+				name_invalid.style.display = "inline";
+				flag = false;
+			}
+			if (pass_invalid.style.display != "none") pass_invalid.style.display = "none";
+			if (pass_reg.test(pass_input.value) == false) {
+
+				pass_invalid.style.display = "inline";
+				flag = false;
+			}
+
+			return flag;
+		}
+	</script>
+</body>
+
+</html>

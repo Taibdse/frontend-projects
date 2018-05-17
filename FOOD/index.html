@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	#drag1 {
+		background-color: rebeccapurple;
+		width: 100px;
+		height: 100px;
+	}
+	#div1{
+		width: 200px;
+		height: 200px;
+		border: 1px solid #ccc;
+	}
+	<body>
+</style>
+
+<body>
+	<button id="btn">CLICK ME</button>
+	<p id="output"></p>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+	<div id="drag1" draggable="true" ondragstart="drag(event)"></div>
+	<script type="text/javascript">
+		var fruits = ["banana", "orange", "apple", "mango"];
+		fruits.sort();
+		document.write(fruits.toString() + '<br>');
+		document.write(fruits.reverse() + '<br>');
+		var points = [10, 4, 8, 3, 23, 35, 11, 100, 43];
+		points.sort(function(a, b) {
+			return a - b;
+		});
+		document.write(points.toString() + '<br>');
+		points.sort(function(a, b) {
+			return 0.5 - Math.random();
+		})
+		document.write(points.toString() + '<br>');
+
+		points.sort(function(a, b) {
+			return 0.5 - Math.random();
+		})
+		document.write(points.toString() + '<br>');
+
+		var min = Math.min.apply(null, points);
+		var max = Math.max.apply(null, points);
+		document.write(min + '<br>');
+		document.write(max + '<br>');
+
+		var cars = [{
+			type: "volvo",
+			year: 2015
+		}, {
+			type: "saah",
+			year: 2001
+		}, {
+			type: "bmu",
+			year: 2010
+		}];
+
+
+		cars.sort(function(a, b) {
+			return a.year - b.year;
+		});
+		document.write(cars[0].type + cars[1].type + cars[2].type + '<br>');
+
+		cars.sort(function(a, b) {
+			var x = a.type.toLowerCase();
+			var y = b.type.toLowerCase();
+			return x - y;
+		});
+		document.write(cars[0].type + cars[1].type + cars[2].type + '<br>');
+
+		document.write(document.body.clientHeight + ', ' + document.body.clientWidth + '<br>');
+		document.write(document.documentElement.clientHeight + ', ' + document.documentElement.clientWidth);
+
+		document.getElementById('btn').onclick = function() {
+			window.open("https://www.w3schools.com/js/js_window.asp", true);
+		}
+
+		//		document.getElementById("btn").onclick = function(){
+		//			if (typeof Storage !== undefined) {
+		//				localStorage.setItem("lastname", "tai");
+		//				document.getElementById("output").innerHTML = localStorage.lastname;
+		//			} else {
+		//				document.getElementById("output").innerHTML = "sorry for you";
+		//			}
+		//		}
+		var click = 0;
+		document.getElementById("btn").onclick = function() {
+			if (typeof Storage !== undefined) {
+				if (localStorage.clickcount) {
+					localStorage.clickcount = Number(localStorage.clickcount) + 1;
+				} else {
+					localStorage.clickcount = 1;
+				}
+				document.getElementById("output").innerHTML = localStorage.clickcount;
+			} else {
+				alert("Sorry");
+			}
+		}
+
+		function allowdrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+</body>
+</html>

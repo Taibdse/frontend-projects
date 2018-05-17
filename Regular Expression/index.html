@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+</head>
+<style>
+	.an {
+		color: red;
+		visibility: hidden;
+	}
+</style>
+
+
+<body>
+
+	<form action="luu.jsp" method="post">
+
+		<p><input type="text" placeholder="fullname" id="t1">
+			<span id="s1" class="an">fullname is wrong</span>
+		</p>
+
+		<p>
+			<input type="email" placeholder="email" id="t2">
+			<span id="s2" class="an">email is wrong</span>
+		</p>
+
+		<p>
+			<input type="password" placeholder="strong password" id="t3">
+			<span id="s3" class="an">Password is wrong</span> <br>
+			<span><input type="checkbox" onClick="chuyen(this)" >Show password </span>
+		</p>
+
+		<p>
+			<input type="submit" value="Send" onClick="return check()">
+		</p>
+
+	</form>
+
+	<script>
+		function check() {
+			var s1 = document.getElementById("s1");
+			var t1 = document.getElementById("t1");
+
+			var s2 = document.getElementById("s2");
+			var t2 = document.getElementById("t2");
+
+			var s3 = document.getElementById("s3");
+			var t3 = document.getElementById("t3");
+
+			var mau1 = /^[a-zA-Z]+([ ][a-zA-Z]+)*$/;
+			//					nhập có chứa các kí tự từ a đến z
+			//					/^[a-z]/ : bắt đầu nhập là chữ thường
+			//					/[^a-z]/ : không chứa các kí tự từ a-z
+			//					/^[a-z]$/ : dấu đô la để dừng ngay lập tức. Câu trên mang ý nghĩa nhập 1 chữ thường
+			//					/^[a-z].$/ : 1 chữ thường và 1 kí tự bất kì xong kết thúc
+			//					/^[a-z][.]$/ : 1 chữ thường, xong 1 dấu chấm và kết thức
+			//					/^[a-z][A-Z]$ : 1 thường, 1 hoa, kết thúc
+			//					/^[a-zA-Z]$: 1 kí tự thường hoặc hoa
+			//					/^\w/ == /^[a-zA-Z0-9]$ : nhập các kí số, hoặc kí tự
+			//					/^[a-z]{3}/ : 3 kí tự thường
+			//					/^[a-z](3,5): nhập từ 3 đến 5 kí tự
+			//					/^[a-z]*/ : không gõ, hoặc gõ nhiều chữ thường. = /^[a-z]{0,}/
+			//					/^[a-z]+/ : gõ 1 hoặc nhiều chữ thường
+			//					/^[a-z]?/ : gõ 1 hoặc 0 chữ thường
+			//					/^[a-zA-Z]+([ ][a-zA-Z]+)*$/ : nhập phù hợp là: Nguyễn Đình Phú
+			var flag = true;
+
+			var mau2 = 	/^\w+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/;
+			var mau3 = /[a-z]/;
+			var mau4 = /[A-Z]/;
+			var mau5 = /[0-9]/;
+			var mau6 = /\W/;
+			if (mau3.test(t3.value) == false || mau4.test(t3.value) == false || mau5.test(t3.value) == false || mau6.test(t3.value) == false || t3.value.length < 6) {
+				s3.style.visibility = "visible";
+				flag = false;
+			} else s3.style.visibility = "hidden";
+
+			if (mau1.test(t1.value) == false) {
+				s1.style.visibility = "visible";
+				flag = false;
+			} else {
+				s1.style.visibility = "hidden";
+			}
+
+			if (mau2.test(t2.value) == false) {
+				s2.style.visibility = "visible";
+				flag = false;
+			} else {
+				s2.style.visibility = "hidden";
+			}
+
+			return flag;
+		}
+
+
+		function chuyen(thecheck) {
+			var thepass = document.getElementById("t3");
+			if (thecheck.checked == true)
+				thepass.type = "text";
+			else
+				thepass.type = "password";
+		}
+	</script>
+</body>
+
+</html>

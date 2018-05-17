@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1000px) {
+	#gian_hang_content > #buoc_1_gian_hang > div:nth-of-type(1) > div {
+		width: 50%;
+		margin-top: 20px
+	}
+	#cho_thue_cho_dat_thiet_bi_step_1 > div {
+		width: 50%;
+		float: left;
+	}
+	#cho_thue_cho_dat_thiet_bi_step_2 > .box {
+		width: 50%;
+		float: left;
+		margin-top: 30px;
+	}
+	#cho_thue_cho_dat_thiet_bi_step_4 > .box_info > ul > li > input {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#top_content_gianhang > div {
+		width: 100%;
+	}
+	#gian_hang_content > #buoc_1_gian_hang > div:nth-of-type(1) > div {
+		width: 100%;
+	}
+	#gian_hang_content > #right_content {
+		display: none;
+	}
+	#gian_hang_content .left_content {
+		width: 100%;
+	}
+	#cho_thue_cho_dat_thiet_bi_step_4 > .box_info > ul > li > input {
+		width: 150px;
+	}
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FAQ</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="main.css">
+	<style>
+		#header-faq {
+			width: 100%;
+			height: 300px;
+			background-image: url('img about us/bg-breadcrumbs-01.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+		}
+
+		#header-faq h2 {
+			font-size: 3em;
+			color: white;
+			text-align: center;
+		}
+
+		#header-faq>div {
+			margin: auto;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#header-faq>div>div {
+			text-align: center;
+			font-size: 1.2em;
+			color: white;
+			margin-top: 15px;
+		}
+
+		#header-faq>div>div a {
+			color: white;
+			text-decoration: none;
+			color: #DCB050;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		#header-faq>div>div a:hover {
+			color: white;
+		}
+
+		footer {
+			height: auto;
+			width: 100%;
+			background-color: #23201E;
+			color: white;
+			text-align: center;
+			padding-left: 60px;
+			padding-right: 60px;
+			padding-top: 60px;
+			padding-bottom: 30px;
+		}
+
+		footer ul {
+			width: 65%;
+			list-style: none;
+			margin: auto;
+			display: block;
+		}
+
+		footer ul li {
+			float: left;
+			padding-left: 30px;
+			padding-right: 30px;
+			border-right: 1px solid #ccc;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+		footer ul li:last-child {
+			border: none;
+		}
+
+		footer ul li:hover {
+			color: #A59A00;
+		}
+
+		footer #dash:before {
+			content: ' ';
+			display: block;
+			clear: both;
+		}
+
+		footer #dash {
+			display: block;
+			height: 1px;
+			width: 80%;
+			background-color: white;
+			margin: auto;
+			margin-top: 80px;
+			opacity: 0.5;
+		}
+
+		footer #privacy {
+			display: block;
+			margin-top: 20px;
+			clear: both;
+			font-weight: bold;
+			opacity: 0.8;
+		}
+
+		footer #privacy a {
+			color: white;
+			opacity: 0.7;
+		}
+
+		footer #privacy a:hover {
+			color: #A59A00;
+		}
+
+		section {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 30px;
+			text-align: center;
+			background-color: #F2F3F8;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		section h2 {
+			font-size: 2em;
+		}
+
+		section>p {
+			margin-top: 30px;
+			opacity: 0.7;
+			font-weight: bold;
+		}
+
+		section ul {
+			width: 50%;
+			margin: 50px auto;
+			list-style: none;
+		}
+
+		section ul li {
+			width: 100%;
+			height: 70px;
+			padding-left: 20px;
+			font-size: 1.2em;
+			line-height: 70px;
+			font-weight: bold;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: left;
+			background-color: white;
+			cursor: pointer;
+			margin-top: 30px;
+			transition: all 0.3s;
+		}
+
+		section ul li span {
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			border-radius: 5px;
+			background-color: #A59A00;
+			float: right;
+			text-align: center;
+			font-size: 2em;
+			color: white;
+		}
+
+		section ul li:hover {
+			color: #A59A00;
+		}
+
+		section ul>div {
+			width: 100%;
+			text-align: left;
+			padding-left: 20px;
+			padding-top: 30px;
+			padding-bottom: 20px;
+			border: 1px solid #ccc;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-top: none;
+			background-color: white;
+			display: none;
+
+		}
+	</style>
+</head>
+
+<body>
+	<span id="bar" onclick="show_nav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+	<span id="auto_scroll"><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+	<div id="nav">
+		<img src="FOOD img/brand-186x65.png">
+		<div id="cart" onClick="openCheckout()">Cart<span><i class="fa fa-cart-plus" aria-hidden="true"></i></span></div>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="About%20us.html">ABOUT US</a></li>
+			<li class="sub_menu"><a href="breakfast.html">MENU</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(0)"></i>
+
+				<ul class="sub_menu_content">
+					<li><a href="breakfast.html">BREAKFAST</a></li>
+					<li><a href="lunch.html">LUNCH</a></li>
+					<li><a href="salads.html">SALADS</a></li>
+					<li><a href="cake.html">CAKES</a></li>
+					<li><a href="drinks.html">DRINKS</a></li>
+					<li><a href="catering.html">CATERING</a></li>
+				</ul>
+			</li>
+			<li class="sub_menu"><a href="">PAGES</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(1)"></i>
+
+				<ul class="sub_menu_content">
+					<div>Pages</div>
+					<li><a href="carrers.html">CARREARS</a></li>
+					<li><a href="faq.html">FAQS</a></li>
+					<li><a href="404_page.html">DEALS</a></li>
+					<li><a href="404_page.html">COMING SOON</a></li>
+					<li><a href="404_page.html">404 PAGE</a></li>
+					<li><a href="503_page.html">503 PAGE</a></li>
+					<li><a href="404_page.html">SERACH RESULT</a></li>
+					<li><a href="404_page.html">MAINTENENCE PAGE</a></li>
+					<li><a href="Terms_of_use.html">TERMS OF USE</a></li>
+					<li><a href="404_page.html">MEMBER FROFILE</a></li>
+					<li><a href="meet_our_team.html">OUR TEAM</a></li>
+					<li><a href="404_page.html">TESTIMONIALS</a></li>
+
+					<div>Additional pages</div>
+
+					<li><a href="404_page.html">TYPOGRAPHY</a></li>
+					<li><a href="404_page.html">BUTTONS</a></li>
+					<li><a href="404_page.html">FORMS</a></li>
+					<li><a href="404_page.html">ICONS</a></li>
+					<li><a href="404_page.html">GRID</a></li>
+					<li><a href="404_page.html">TABS  ACCORDIANS</a></li>
+					<li><a href="404_page.html">PROGRESS BARS</a></li>
+					<li><a href="404_page.html">TABLE</a></li>
+					<li><a href="404_page.html">LOGIN/REGISTER</a></li>
+
+					<div>Menu</div>
+
+					<li><a href="404_page.html">CLASSIC MENU</a></li>
+					<li><a href="404_page.html">MODERN MENU</a></li>
+					<li><a href="404_page.html">SINGLE MENU</a></li>
+					<li><a href="404_page.html">PRODUCT MENU</a></li>
+					<li><a href="">CART PAGE</a></li>
+				</ul>
+			</li>
+			<li class="sub_menu"><a href="Grid_gallery.html">GALLARY</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(2)"></i>
+				<ul class="sub_menu_content">
+					<li><a href="404_page.html">GRID GALLERY</a></li>
+					<li><a href="404_page.html">COBBLES GALLERY</a></li>
+					<li><a href="404_page.html">MASONRY GALLERY</a></li>
+					<li><a href="404_page.html">GRID WITHOUT PADDING</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li class="sub_menu"><a href="News.html">NEWS</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(3)"></i>
+				<ul class="sub_menu_content">
+					<li><a href="404_page.html">CLASSIC BLOG</a></li>
+					<li><a href="404_page.html">GRID BLOG</a></li>
+					<li><a href="404_page.html">MASONRY  BLOCG</a></li>
+					<li><a href="404_page.html">MODERN BLOG</a></li>
+					<li><a href="404_page.html">SINGLE POST</a></li>
+				</ul>
+			</li>
+			<div id="location"><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span class="info_icon">267 Park Avenue <br>New York, NY 90210</span></div>
+			<div id="phone"><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="info_icon"> 1-800-1234-567 <br>Mon – Sat: 9:00–18:00</span></div>
+			<div id="network">
+				<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+				<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+				<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+				<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+			</div>
+		</ul>
+	</div>
+	<header id="header-faq">
+		<div>
+			<h2>FAQ</h2>
+			<div><a href="home.html">Home</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Pages</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> FAQ</div>
+		</div>
+	</header>
+	<section>
+		<h2>General Questions</h2>
+		<p>All you need to know about VeganFood Restaurant and our services.</p>
+		<ul>
+			<li>Do you take reservations?<span class="sign">+</span></li>
+			<div class="hidden_content">Though most vegan diners and restaurants don’t take reservations, we do. We take limited number of reservations for groups of 6 - 10 people for dinner and weekday breakfast/lunch. Please note: out of respect for all guests wishing to enjoy an experience with us, we don't seat incomplete parties. Reservations are held for 15 minutes beyond the reserved time, then released to other guests.</div>
+
+			<li>Do you offer organic products?<span class="sign">+</span></li>
+			<div class="hidden_content">All our dairy and bakery products are organic. If the quality, availability and price are right, we do. But top quality is absolutely essential. And wherever possible, we use local or regional produce.</div>
+
+			<li>How often do you change the menu?<span class="sign">+</span></li>
+			<div class="hidden_content">We change our dishes every day. In our menu you'll find over 40 delicious salads, hot dishes, snacks and desserts - as well as baked goods, sandwiches and soups from the counter.</div>
+
+			<li>Where can I get your recipes?<span class="sign">+</span></li>
+			<div class="hidden_content">We're very proud of our cookbook "VeganFood Recipes" which you can get online and in the restaurant. We also share new recipes with you via our blog and in our newsletter.</div>
+		</ul>
+		<!--		<div class="clear"></div>-->
+	</section>
+	<footer>
+		<ul>
+			<li><a href="breakfast.html">BREAKFAST</a></li>
+			<li><a href="lunch.html">LUNCH</a></li>
+			<li><a href="salads.html">SALADS</a></li>
+			<li><a href="cake.html">CAKES</a></li>
+			<li><a href="drinks.html">DRINKS</a></li>
+			<li><a href="catering.html">CATERING</a></li>
+		</ul>
+		<div id="dash"></div>
+		<div id="privacy">VeganFood © 2017 <a href="">Privacy Policy</a></div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">
+		//no write src jquery here
+		$(function() {
+			$('.sign').click(function() {
+				if ($(this).text() == '+') {
+					$(this).text('-');
+					$(this).parent('li').next('div').slideDown(400);
+				} else {
+					$(this).text('+');
+					$(this).parent('li').next('div').slideUp(400);
+				}
+			});
+		})
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>

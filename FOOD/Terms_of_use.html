@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FAQ</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="main.css">
+	<style>
+		#header-faq {
+			width: 100%;
+			height: 300px;
+			background-image: url('img about us/bg-breadcrumbs-01.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+		}
+
+		#header-faq h2 {
+			font-size: 3em;
+			color: white;
+			text-align: center;
+		}
+
+		#header-faq>div {
+			margin: auto;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#header-faq>div>div {
+			text-align: center;
+			font-size: 1.2em;
+			color: white;
+			margin-top: 15px;
+		}
+
+		#header-faq>div>div a {
+			color: white;
+			text-decoration: none;
+			color: #DCB050;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		#header-faq>div>div a:hover {
+			color: white;
+		}
+
+		section {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 30px;
+			text-align: center;
+			background-color: #F2F3F8;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		section ul {
+			width: 50%;
+			margin: 50px auto;
+			list-style: none;
+		}
+
+		section ul li {
+			width: 100%;
+			height: 70px;
+			padding-left: 20px;
+			font-size: 1.1em;
+			line-height: 70px;
+			font-weight: bold;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: left;
+			background-color: white;
+			cursor: pointer;
+			margin-top: 30px;
+			transition: all 0.3s;
+		}
+
+		section ul li span {
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			border-radius: 5px;
+			background-color: #A59A00;
+			float: right;
+			text-align: center;
+			font-size: 2em;
+			color: white;
+		}
+
+		section ul li:hover {
+			color: #A59A00;
+		}
+
+		section ul>div {
+			width: 100%;
+			text-align: justify;
+			padding: 30px 20px 20px 20px;
+			border: 1px solid #ccc;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-top: none;
+			background-color: white;
+			display: none;
+			line-height: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<span id="bar" onclick="show_nav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+	<span id="auto_scroll"><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+	<div id="nav">
+		<img src="FOOD img/brand-186x65.png">
+		<div id="cart" onClick="openCheckout()">Cart<span><i class="fa fa-cart-plus" aria-hidden="true"></i></span></div>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="About%20us.html">ABOUT US</a></li>
+			<li class="sub_menu"><a href="breakfast.html">MENU</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(0)"></i>
+
+				<ul class="sub_menu_content">
+					<li><a href="breakfast.html">BREAKFAST</a></li>
+					<li><a href="lunch.html">LUNCH</a></li>
+					<li><a href="salads.html">SALADS</a></li>
+					<li><a href="cake.html">CAKES</a></li>
+					<li><a href="drinks.html">DRINKS</a></li>
+					<li><a href="catering.html">CATERING</a></li>
+				</ul>
+			</li>
+			<li class="sub_menu"><a href="">PAGES</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(1)"></i>
+
+				<ul class="sub_menu_content">
+					<div>Pages</div>
+					<li><a href="carrers.html">CARREARS</a></li>
+					<li><a href="faq.html">FAQS</a></li>
+					<li><a href="404_page.html">DEALS</a></li>
+					<li><a href="404_page.html">COMING SOON</a></li>
+					<li><a href="404_page.html">404 PAGE</a></li>
+					<li><a href="503_page.html">503 PAGE</a></li>
+					<li><a href="404_page.html">SERACH RESULT</a></li>
+					<li><a href="404_page.html">MAINTENENCE PAGE</a></li>
+					<li><a href="Terms_of_use.html">TERMS OF USE</a></li>
+					<li><a href="404_page.html">MEMBER FROFILE</a></li>
+					<li><a href="meet_our_team.html">OUR TEAM</a></li>
+					<li><a href="404_page.html">TESTIMONIALS</a></li>
+
+					<div>Additional pages</div>
+
+					<li><a href="404_page.html">TYPOGRAPHY</a></li>
+					<li><a href="404_page.html">BUTTONS</a></li>
+					<li><a href="404_page.html">FORMS</a></li>
+					<li><a href="404_page.html">ICONS</a></li>
+					<li><a href="404_page.html">GRID</a></li>
+					<li><a href="404_page.html">TABS  ACCORDIANS</a></li>
+					<li><a href="404_page.html">PROGRESS BARS</a></li>
+					<li><a href="404_page.html">TABLE</a></li>
+					<li><a href="404_page.html">LOGIN/REGISTER</a></li>
+
+					<div>Menu</div>
+
+					<li><a href="404_page.html">CLASSIC MENU</a></li>
+					<li><a href="404_page.html">MODERN MENU</a></li>
+					<li><a href="404_page.html">SINGLE MENU</a></li>
+					<li><a href="404_page.html">PRODUCT MENU</a></li>
+					<li><a href="">CART PAGE</a></li>
+				</ul>
+			</li>
+			<li class="sub_menu"><a href="Grid_gallery.html">GALLARY</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(2)"></i>
+				<ul class="sub_menu_content">
+					<li><a href="404_page.html">GRID GALLERY</a></li>
+					<li><a href="404_page.html">COBBLES GALLERY</a></li>
+					<li><a href="404_page.html">MASONRY GALLERY</a></li>
+					<li><a href="404_page.html">GRID WITHOUT PADDING</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li class="sub_menu"><a href="News.html">NEWS</a><i class="fa fa-angle-down" aria-hidden="true" onclick="show_sub_menu(3)"></i>
+				<ul class="sub_menu_content">
+					<li><a href="404_page.html">CLASSIC BLOG</a></li>
+					<li><a href="404_page.html">GRID BLOG</a></li>
+					<li><a href="404_page.html">MASONRY  BLOCG</a></li>
+					<li><a href="404_page.html">MODERN BLOG</a></li>
+					<li><a href="404_page.html">SINGLE POST</a></li>
+				</ul>
+			</li>
+			<div id="location"><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span class="info_icon">267 Park Avenue <br>New York, NY 90210</span></div>
+			<div id="phone"><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="info_icon"> 1-800-1234-567 <br>Mon – Sat: 9:00–18:00</span></div>
+			<div id="network">
+				<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+				<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+				<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+				<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+			</div>
+		</ul>
+	</div>
+	<header id="header-faq">
+		<div>
+			<h2>Terms of Use</h2>
+			<div><a href="home.html">Home</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Pages</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Terms of Use</div>
+		</div>
+	</header>
+	<section>
+		<ul>
+			<li>General information<span class="sign">+</span></li>
+			<div class="hidden_content">Welcome to our Privacy Policy page! When you use our web site services, you trust us with your information. This Privacy Policy is meant to help you understand what data we collect, why we collect it, and what we do with it. When you share information with us, we can make our services even better for you. For instance, we can show you more relevant search results and ads, help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy. This is important; we hope you will take time to read it carefully. Remember, you can find controls to manage your information and protect your privacy and security. We’ve tried to keep it as simple as possible.</div>
+
+			<li>Right to access, correct and delete data and to object to data processing<span class="sign">+</span></li>
+			<div class="hidden_content">Our customers have the right to access, correct and delete personal data relating to them, and to object to the processing of such data, by addressing a written request, at any time. The Company makes every effort to put in place suitable precautions to safeguard the security and privacy of personal data, and to prevent it from being altered, corrupted, destroyed or accessed by unauthorized third parties. However, the Company does not control each and every risk related to the use of the Internet, and therefore warns the Site users of the potential risks involved in the functioning and use of the Internet. The Site may include links to other web sites or other internet sources. As the Company cannot control these web sites and external sources, the Company cannot be held responsible for the provision or display of these web sites and external sources, and may not be held liable for the content, advertising, products, services or any other material available on or from these web sites or external sources.</div>
+
+			<li>Management of personal data<span class="sign">+</span></li>
+			<div class="hidden_content">You can view or edit your personal data online for many of our services. You can also make choices about our collection and use of your data. How you can access or control your personal data will depend on which services you use. You can choose whether you wish to receive promotional communications from our web site by email, SMS, physical mail, and telephone. If you receive promotional email or SMS messages from us and would like to opt out, you can do so by following the directions in that message. You can also make choices about the receipt of promotional email, telephone calls, and postal mail by visiting and signing into Company Promotional Communications Manager, which allows you to update contact information, manage contact preferences, opt out of email subscriptions, and choose whether to share your contact information with our partners. These choices do not apply to mandatory service communications that are part of certain web site services.</div>
+
+			<li>Information We Collect<span class="sign">+</span></li>
+			<div class="hidden_content">Our store collects data to operate effectively and provide you the best experiences with our services. You provide some of this data directly, such as when you create a personal account. We get some of it by recording how you interact with our services by, for example, using technologies like cookies, and receiving error reports or usage data from software running on your device. We also obtain data from third parties (including other companies). For example, we supplement the data we collect by purchasing demographic data from other companies. We also use services from other companies to help us determine a location based on your IP address in order to customize certain services to your location. The data we collect depends on the services and features you use.</div>
+
+			<li>How We Use Your Information<span class="sign">+</span></li>
+			<div class="hidden_content">Our web site uses the data we collect for three basic purposes: to operate our business and provide (including improving and personalizing) the services we offer, to send communications, including promotional communications, and to display advertising. In carrying out these purposes, we combine data we collect through the various web site services you use to give you a more seamless, consistent and personalized experience. However, to enhance privacy, we have built in technological and procedural safeguards designed to prevent certain data combinations. For example, we store data we collect from you when you are unauthenticated (not signed in) separately from any account information that directly identifies you, such as your name, email address or phone number.</div>
+
+			<li>Sharing Your Information<span class="sign">+</span></li>
+			<div class="hidden_content">We share your personal data with your consent or as necessary to complete any transaction or provide any service you have requested or authorized. For example, we share your content with third parties when you tell us to do so. When you provide payment data to make a purchase, we will share payment data with banks and other entities that process payment transactions or provide other financial services, and for fraud prevention and credit risk reduction. In addition, we share personal data among our controlled affiliates and subsidiaries. We also share personal data with vendors or agents working on our behalf for the purposes described in this statement. For example, companies we've hired to provide customer service support or assist in protecting and securing our systems and services may need access to personal data in order to provide those functions. In such cases, these companies must abide by our data privacy and security requirements and are not allowed to use personal data they receive from us for any other purpose. We may also disclose personal data as part of a corporate transaction such as a merger or sale of assets.</div>
+		</ul>
+		<!--		<div class="clear"></div>-->
+	</section>
+	<footer>
+		<ul>
+			<li><a href="breakfast.html">BREAKFAST</a></li>
+			<li><a href="lunch.html">LUNCH</a></li>
+			<li><a href="salads.html">SALADS</a></li>
+			<li><a href="cake.html">CAKES</a></li>
+			<li><a href="drinks.html">DRINKS</a></li>
+			<li><a href="catering.html">CATERING</a></li>
+		</ul>
+		<div id="dash"></div>
+		<div id="privacy">VeganFood © 2017 <a href="">Privacy Policy</a></div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">
+		//no write src jquery here
+		$(function() {
+			$('.sign').click(function() {
+				if ($(this).text() == '+') {
+					$(this).text('-');
+					$(this).parent('li').next('div').slideDown(400);
+				} else {
+					$(this).text('+');
+					$(this).parent('li').next('div').slideUp(400);
+				}
+			});
+		})
+	</script>
+	<script src="main.js"></script>
+</body>
+
+</html>

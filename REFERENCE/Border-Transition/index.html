@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <style>
+        .sliding-u-t-b {
+            display: inline-block;
+        }
+        
+        .sliding-u-t-b:after {
+            content: '';
+            display: block;
+            height: 0;
+            width: 100%;
+            background: transparent;
+            transition: all .5s ease;
+        }
+        
+        .sliding-u-t-b:hover:after {
+            height: 3px;
+            background: blue;
+        }
+        /*=====================*/
+        
+        .sliding-u-l-r {
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.5s ease;
+            white-space: nowrap;
+        }
+        
+        .sliding-u-l-r:after {
+            content: '';
+            display: block;
+            width: 0;
+            border-bottom: 3px solid blue;
+            transition: all 0.5s ease-in;
+        }
+        
+        .sliding-u-l-r:hover:after {
+            width: 100%;
+        }
+        /*=============================*/
+        
+        .sliding-u-r-l {
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.5s ease;
+            white-space: nowrap;
+            position: relative;
+            border-bottom: 3px solid #ccc;
+        }
+        
+        .sliding-u-r-l:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            width: 0;
+            border-bottom: 3px solid blue;
+            transition: all 0.5s ease-in;
+        }
+        
+        .sliding-u-r-l:hover:after {
+            width: 100%;
+        }
+        /*================================*/
+        
+        .sliding-u-middle {
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.5s ease;
+            white-space: nowrap;
+            position: relative;
+            border-bottom: 3px solid #ccc;
+        }
+        
+        .sliding-u-middle:after {
+            content: '';
+            display: block;
+            margin: auto;
+            bottom: -3px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            border-bottom: 3px solid blue;
+            transition: all 0.5s ease-in;
+        }
+        
+        .sliding-u-middle:hover:after {
+            width: 100%;
+        }
+        /*=========================================*/
+        
+        .sliding-u-l-r-l-inverse {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 3px;
+        }
+        
+        .sliding-u-l-r-l-inverse:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            transition: width 0s ease;
+        }
+        
+        .sliding-u-l-r-l-inverse:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background: blue;
+            transition: width .5s ease;
+        }
+        
+        .sliding-u-l-r-l-inverse:hover:before {
+            width: 0%;
+            background: blue;
+            transition: width .5s ease;
+        }
+        
+        .sliding-u-l-r-l-inverse:hover:after {
+            width: 0%;
+            background: transparent;
+            transition: width 0s ease;
+        }
+        
+        /*.sliding-square {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            position: relative;
+        }
+        
+        .sliding-square:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            z-index: 1;
+            height: 0;
+            border-left: 2px solid blue;
+            border-bottom: 2px solid blue;
+            transition: height 0.5s ease-in-out 0s, width 0.5s ease-in-out 0.5s;
+        }
+        
+        .sliding-square:hover:after {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .draw {
+            -webkit-transition: color 0.25s;
+            transition: color 0.25s;
+        }
+        
+        .draw::before,
+        .draw::after {
+            border: 2px solid transparent;
+            width: 0;
+            height: 0;
+        }
+        
+        .draw::before {
+            top: 0;
+            left: 0;
+        }
+        
+        .draw::after {
+            bottom: 0;
+            right: 0;
+        }
+        
+        .draw:hover {
+            color: #60daaa;
+        }
+        
+        .draw:hover::before,
+        .draw:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .draw:hover::before {
+            border-top-color: #60daaa;
+            border-right-color: #60daaa;
+            -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+            transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+        }
+        
+        .draw:hover::after {
+            border-bottom-color: #60daaa;
+            border-left-color: #60daaa;
+            -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+            transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+        }*/
+        
+        /*div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="sliding-u-l-r">
+        Some data here
+    </div>
+</body>
+
+</html>

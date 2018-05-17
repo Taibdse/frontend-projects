@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#div1 {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="div1"></div>
+	<button type="button">Nhan vao day</button>
+	<script>
+		var button = document.getElementsByTagName('button');
+		button[0].addEventListener('click', chuyen_trang);
+
+		function chuyen_trang() {
+			window.location.href = 'draft1.html'
+			window.onload = function() {
+				var x = window.location;
+				var div2 = document.createElement("div");
+				div2.style.width = '100px';
+				div2.style.height = '100px';
+				div2.style.backgroundColor = 'yellow';
+				x.body.appendChild(div2);
+			}
+
+		}
+	</script>
+</body>
+</html>

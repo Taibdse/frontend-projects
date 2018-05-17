@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<!--
+CSS3 defines two types of gradients:
+  + Linear Gradients (goes down/up/left/right/diagonally)
+  + Radial Gradients (defined by their center)
+
+CSS3 Linear Gradients: To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+-->
+
+<head>
+    <title>Gradient background</title>
+
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+        /*Linear Gradient - Top to Bottom (this is default)
+        * The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow
+        */
+        
+        #linear-gradient-top-bottom {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(red, yellow);
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(red, yellow);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(red, yellow);
+            /* Standard syntax */
+            background: linear-gradient(red, yellow);
+        }
+        /*Linear Gradient - Left to Right
+        * The following example shows a linear gradient that starts on the left. It starts red, transitioning to the right
+        */
+        
+        #linear-gradient-left-to-right {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(left, red, yellow);
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(right, red, yellow);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(right, red, yellow);
+            /* Standard syntax */
+            background: linear-gradient(to right, red, yellow);
+        }
+        /*Linear Gradient - Diagonal
+        * You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
+        The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow:
+        */
+        
+        #linear-gradient-diagonal {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(left top, red, yellow);
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(bottom right, red, yellow);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(bottom right, red, yellow);
+            /* Standard syntax */
+            background: linear-gradient(to left bottom, red, yellow, red);
+        }
+        /*Linear Gradient - Using Angles
+        * The angle is specified as an angle between a horizontal line and the gradient line:
+        */
+        
+        #linear-gradient-angle {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: #d2c100;
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(5deg,red, yellow);
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(5deg, red, yellow);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(5deg, red, yellow);
+            /* Standard syntax */
+            background: linear-gradient(-45deg, red, yellow);
+        }
+        /*Linear Gradient - Multiple color stops
+        */
+        
+        #linear-gradient-multiple-colors {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(red, yellow, green);
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(red, yellow, green);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(red, yellow, green);
+            /* Standard syntax */
+            background: linear-gradient(90deg, red, yellow, green, blue);
+        }
+        /*--------------------------*/
+        /** CSS3 Radial Gradients
+        A radial gradient is defined by its center.
+        To create a radial gradient you must also define at least two color stops.
+        */
+        /*Radial Gradient - Evenly Spaced Color Stops (this is default)*/
+        
+        #gradient-even-spaces {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* Safari 5.1 to 6.0 */
+            background: -webkit-radial-gradient(red, yellow, green);
+            /* For Opera 11.6 to 12.0 */
+            background: -o-radial-gradient(red, yellow, green);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-radial-gradient(red, yellow, green);
+            /* Standard syntax */
+            background: radial-gradient(red, yellow, green);
+        }
+        /*Radial Gradient - Evenly Spaced Color Stops (this is default)*/
+        
+        #gradient-different-spaces {
+            width: 100%;
+            height: 100px;
+            /* For browsers that do not support gradients */
+            background: red;
+            /* Safari 5.1 to 6.0 */
+            background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%);
+            /* For Opera 11.6 to 12.0 */
+            background: -o-radial-gradient(red 5%, yellow 15%, green 60%);
+            /* For Firefox 3.6 to 15 */
+            background: -moz-radial-gradient(red 5%, yellow 15%, green 60%);
+            /* Standard syntax */
+            background: radial-gradient(red 5%, yellow 15%, green 60%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="linear-gradient-top-bottom">
+    </div>
+
+    <div id="linear-gradient-left-to-right">
+    </div>
+
+    <div id="linear-gradient-diagonal">
+        diagonal
+    </div>
+
+    <div id="linear-gradient-angle">
+        angle
+    </div>
+
+    <div id="linear-gradient-multiple-colors">
+    </div>
+
+    <!--Radical gradient -->
+    <div id="gradient-even-spaces">
+    </div>
+
+    <div id="gradient-different-spaces">
+    </div>
+</body>
+
+</html>

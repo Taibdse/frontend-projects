@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+</head>
+<style>
+	*,
+	html {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	form {
+		width: 80%;
+		height: auto;
+		margin: auto;
+		padding: 20px 20px;
+	}
+
+	legend {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	p {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	input {
+		margin-left: 30px;
+		outline: none;
+		background-color: white;
+	}
+
+	span {
+		display: none;
+		color: red;
+		margin-left: 10px;
+	}
+
+	button {
+		margin-top: 30px;
+		margin-left: 20px;
+		padding: 10px 20px;
+		cursor: pointer;
+	}
+
+</style>
+
+
+<body>
+
+	<form>
+		<fieldset>
+			<legend>Registration form</legend>
+			<p>
+				User ID: <input type="text" value="" id="id">
+				<span id="id_sp">required and must be the length of 5 - 12</span>
+			</p>
+			<p>
+				Password <input type="password" value="" id="password">
+				<span id="pass_sp">required and must be the length of 7 - 20</span>
+				<span style="margin-top: 20px;"><input type="checkbox" id="check" onclick="change()"> Show password</span>
+			</p>
+			<p>
+				Name: <input type="text" value="" id="name">
+				<span id="name_sp">required and alphabets only</span>
+			</p>
+			<p>
+				Address: <input type="text" value="" id="address">
+				<span id="addr_sp">Optional</span>
+			</p>
+			<p>
+				Country: <select>
+				Please select your country
+			<option>Gemany</option>
+			<option>Vietnam</option>
+			<option>Canada</option>
+			<option>Australia</option>
+			</select>
+			</p>
+			<p>
+				ZIP code: <input type="text" id="code" value="">
+				<span id="code_sp">Required and must be numeric only</span>
+			</p>
+			<p>
+				Email: <input type="email" value="" id="email">
+				<span id="email_sp">Required and must be valid email</span>
+			</p>
+			<p>
+				Sex: <input type="radio" name="sex">Male
+				<input type="radio" name="sex">Female
+			</p>
+			<p>
+				language: <input type="checkbox"> English
+				<input type="checkbox"> Non-English
+			</p>
+			<p>
+				About: <textarea></textarea>
+			</p>
+			<button type="submit" onclick="return check()">Submit</button>
+		</fieldset>
+	</form>
+
+	<script>
+		var id = document.getElementById("id");
+		var password = document.getElementById("password");
+		var name = document.getElementById("name");
+		var addr = document.getElementById("address");
+		var code = document.getElementById("code");
+		var email = document.getElementById("email");
+
+		function check() {
+			var flag = true;
+
+			var id_sp = document.getElementById("id_sp");
+			var pass_sp = document.getElementById("pass_sp");
+			var name_sp = document.getElementById("name_sp");
+			var addr_sp = document.getElementById("addr_sp");
+			var code_sp = document.getElementById("code_sp");
+			var email_sp = document.getElementById("email_sp");
+			
+			var id_reg = /^(.+){5,12}$/;
+			var pass_reg = /^(.+){7,20}$/;
+			var name_reg = /^[a_zA-Z]+$/;
+			var addr_reg = /^(.+){0,}$/;
+			var code_reg = /^\d+$/;
+			var email_reg = /^\w+[@][a-zA-Z]+([.][a_zA-Z]+){1,2}$/;
+
+			if (id_reg.test(id.value) == false) {
+				id_sp.style.display = 'inline-block';
+				flag = false;
+			}
+
+			if (pass_reg.test(password.value) == false) {
+				pass_sp.style.display = 'inline-block';
+				flag = false;
+			}
+
+			if (name_reg.test(name.value) == false) {
+				name_sp.style.display = 'inline-block'
+				flag = false;
+			}
+
+			if (addr_reg.test(addr.value) == false) {
+				addr_sp.style.display = 'inline-block';
+				flag = false;
+			}
+
+			if (code_reg.test(code.value) == false) {
+				code_sp.style.display = 'inline-block';
+				flag =false;
+			}
+
+			if (email_reg.test(email.value) == false) {
+				email_sp.style.display = 'inline-block';
+				flag = false;
+			}
+			return flag;
+
+		}
+
+		function change() {
+			var change_type  = document.getElementById("check");
+			if (change_type.checked == true) password.type = "text";
+			else password.type = "password";
+		}
+
+	</script>
+</body>
+
+</html>
